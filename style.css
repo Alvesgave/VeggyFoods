@@ -26,6 +26,7 @@
 .deliveryFlex{
     display:flex;
     align-items: center;
+    justify-content: center;
     margin: 30px 0px;
 }
 
@@ -277,4 +278,37 @@ a.nav-link:hover{
 .containerColors {
     display: flex;
     justify-content: space-around;
+}
+
+/* Suppliers Section free */
+
+.suppliers{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    /* padding-bottom: 40px; */
+}
+
+.suppliers .supplierItem{
+    position: relative;
+    border-radius: 50px;
+    display: flex;
+}
+
+.suppliers .supplierItem .image {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.suppliers .supplierItem .image .logo{
+    width: 350px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 50px;
+    border: none;
+    box-shadow: 0px 0px 6px 1px rgba(0,0,0,0.29);
 }
